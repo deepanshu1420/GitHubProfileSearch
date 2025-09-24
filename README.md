@@ -11,8 +11,7 @@
 
 ---
 
-## 🌟 Live Demo
-[**View App Here**](http://githubprofilesearch-online.netlify.app)
+🌐 [Live Demo](http://githubprofilesearch-online.netlify.app)
 
 ---
 
