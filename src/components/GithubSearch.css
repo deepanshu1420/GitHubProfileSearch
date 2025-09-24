@@ -9,7 +9,7 @@ body {
     color: #fefefe;
     font-size: 13px;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
 }
 .main-container {
@@ -17,26 +17,30 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 30px; /* MODIFIED: Adjusted gap for consistent spacing */
+    padding: 20px;
 }
 .main-heading {
     text-align: center;
     font-size: 35px;
-    margin-top: 50px;
+    margin-top: 20px; /* MODIFIED: Adjusted margin for spacing */
 }
 .search-form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
+    width: 100%;
+    max-width: 720px;
 }
 .search-input {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     padding: 15px 20px;
     outline: none;
     border: none;
     font-size: 20px;
-    border-radius: 20px;
+    border-radius: 26px;
     background-color: #2b3d65;
     box-shadow: 0 16px 30px -10px rgba(0,0,0,0.2);
     color: #fefefe;
@@ -53,17 +57,52 @@ body {
     text-align: center;
     background-color: #20428a;
     color: #fefefe;
-    border-radius: 20px;
+    border-radius: 26px;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 16px 30px -10px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
 }
+
+.search-btn:hover {
+    background-color: #18336d;
+    transform: scale(1.05);
+}
+
+.search-btn:active {
+    background-color: #004494;
+    transform: scale(0.97);
+}
+
 .error-msg {
     font-size: 20px;
 }
+
+.clear-btn {
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+    background-color: #20428a; 
+    color: #fefefe;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px -10px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    /* MODIFIED: Replaced negative margin with a positive one for spacing */
+    margin-top: -7px; 
+}
+
+.clear-btn:hover {
+    background-color: #18336d; 
+    transform: scale(1.05);
+}
+
 .profile-container {
-    width: 720px;
+    width: 100%;
+    max-width: 720px;
     height: auto;
     margin: 0 auto;
     padding: 30px;
@@ -89,17 +128,22 @@ body {
 .profile-details {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .profile-des {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 500px;
-    gap: 100px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 .profile-name {
     font-size: 30px;
     font-weight: 600;
+}
+.profile-created {
+    font-size: 13px;
+    color: #b1a7a7;
 }
 a.profile-username {
     color: #fefefe;
@@ -107,7 +151,7 @@ a.profile-username {
     margin-top: 10px;
 }
 .profile-bio {
-    margin: 40px 20px 20px 5px;
+    margin: 20px 0;
     color: #b1a7a7;
     line-height: 1.5rem;
 }
@@ -116,37 +160,45 @@ a.profile-username {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 20px;
-    height: 100px;
-    width: 500px;
-    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
     background: #141d2f;
     font-size: 13px;
-    line-height: 2.5rem;
     text-align: center;
     box-shadow: 0 16px 30px -10px rgba(0,0,0,0.2);
 }
+
+.profile-stats p {
+    line-height: 1.5rem;
+}
+
 .stats {
     color: #1b47a4;
     font-size: 30px;
     font-weight: 800;
+    display: block;
+    margin-top: 8px;
 }
 .profile-info {
     display: flex;
-    justify-content: flex-start;
-    margin-top: 50px;
-    gap: 80px;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .profile-links {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    flex-direction: column;
     margin-top: 30px;
+    flex-wrap: wrap;
 }
-.twitter-link {
+.twitter-link, .profile-url {
     background-color: #141d2f;
-    width: 300px;
+    flex-grow: 1;
+    min-width: 200px;
     display: flex;
     gap: 10px;
     justify-content: center;
@@ -156,135 +208,212 @@ a.profile-username {
     text-decoration: none;
     border-radius: 20px;
     box-shadow: 0 16px 30px -10px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
 }
-.profile-url {
-    background-color: #141d2f;
-    width: 300px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-    color: #fefefe;
-    text-decoration: none;
-    border-radius: 20px;
-    box-shadow: 0 16px 30px -10px rgba(0,0,0,0.2);
+.twitter-link:hover, .profile-url:hover {
+    background-color: #0f172a;
+    transform: scale(1.05);
 }
-@media (max-width: 900px) {
+
+
+/* --- Media Queries for Responsiveness --- */
+
+@media (max-width: 768px) {
     .main-heading {
         font-size: 25px;
     }
     .search-input {
-        width: 400px;
+        font-size: 16px;
+    }
+    .search-btn {
+        width: 80px;
+        font-size: 16px;
     }
     .profile-container {
-        width: 500px;
+        padding: 20px;
     }
-    .profile-avatar {
-        width: 80px;
+    .profile-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .profile-details {
+        align-items: center;
     }
     .profile-des {
-        width: 350px;
-        gap: 50px;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 10px;
+        align-items: baseline;
     }
     .profile-name {
-        font-size: 15px;
+        font-size: 24px;
+    }
+    a.profile-username {
+        align-self: flex-start;
     }
     .profile-created {
-        font-size: 13px;
-    }
-    .profile-username {
-        font-size: 13px;
-        margin-left: 10px;
-    }
-    .profile-bio {
         font-size: 12px;
-        margin: 40px 60px 20px 5px;
     }
     .profile-stats {
-        width: 330px;
+        width: 100%;
     }
     .stats {
         font-size: 25px;
     }
     .profile-info {
-        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+        margin-top: 20px;
     }
-    .profile-location {
-        font-size: 12px;
+    .profile-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
-    .profile-company {
-        font-size: 12px;
+    .twitter-link, .profile-url {
+        width: 100%;
+        max-width: 300px;
     }
-    .twitter-link {
-        width: 200px;
-        font-size: 12px;
-    }
-    .profile-url {
-        width: 200px;
-        font-size: 12px;
-    }
-  }
+}
 
-  @media (max-width: 590px) {
+@media (max-width: 480px) {
+    .main-container {
+        padding: 15px;
+        gap: 20px;
+    }
     .main-heading {
-        font-size: 20px;
+        font-size: 22px;
+        margin-top: 20px;
     }
-    .search-input {
-        width: 250px;
+    .search-form {
+        flex-direction: column;
+        gap: 15px;
     }
-    .search-btn {
-        width: 80px;
-        font-size: 15px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+    .search-input, .search-btn {
+        width: 100%;
+        font-size: 14px;
     }
+    
+    .clear-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+        margin-top: -2px; /* MODIFIED: Increased space on mobile */
+    }
+    
     .profile-container {
-        width: 400px;
+        padding: 15px;
     }
     .profile-avatar {
-        width: 50px;
-    }
-    .profile-des {
-        width: 280px;
-        gap: 40px;
+        width: 80px;
     }
     .profile-name {
-        font-size: 12px;
+        font-size: 20px;
     }
     .profile-created {
         font-size: 11px;
     }
-    .profile-username {
-        font-size: 10px;
-        margin-left: 10px;
-    }
-    .profile-bio {
-        font-size: 10px;
-        margin: 40px 60px 20px 5px;
-    }
     .profile-stats {
-        width: 250px;
-        font-size: 10px;
+        gap: 10px;
+        padding: 15px 10px;
+        font-size: 11px;
     }
     .stats {
-        font-size: 18px;
+        font-size: 20px;
     }
-    .profile-info {
-        gap: 20px;
+}
+
+
+.default-images {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+    margin-top: 60px;
+    flex-wrap: wrap; /* allows wrapping on small screens */
+}
+
+.default-img {
+    width: 370px;
+    height: 250px;
+    border-radius: 26px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+    cursor: pointer;
+    will-change: transform, box-shadow;
+    transform: translateZ(0);
+}
+
+.default-img:hover {
+    transform: scale(1.1) translateZ(0);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+@media (max-width: 900px) {
+    .default-img {
+        width: 350px;
+        height: 220px;
     }
-    .profile-location {
-        font-size: 10px;
+}
+
+@media (max-width: 600px) {
+    .default-img {
+        width: 330px;
+        height: 150px;
     }
-    .profile-company {
-        font-size: 10px;
+
+     .default-images {
+        gap: 23px; /* smaller gap on mobile */
+        margin-top: 21px;
     }
-    .twitter-link {
-        width: 180px;
-        font-size: 10px;
-    }
-    .profile-url {
-        width: 180px;
-        font-size: 10px;
-    }
-  }
+}
+
+.footer-line {
+    text-align: center;
+    margin-top: 35px;
+    color: #555;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+
+/* First line */
+.footer-line p:first-child {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-line p:first-child:hover {
+    color: #000;
+    transform: scale(1.04); /* first line hover effect */
+}
+
+/* Second line */
+.footer-line p:last-child {
+    font-size: 17px;
+    margin: 30px 0 0 0;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-line p:last-child:hover {
+    color: #000;
+    transform: scale(1.03); /* second line hover effect (different) */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .footer-line p:first-child { font-size: 16px; }
+    .footer-line p:last-child { font-size: 14px; }
+    .footer-line { margin-top: 25px; }
+}
+
+@media (max-width: 600px) {
+    .footer-line p:first-child { font-size: 14px; }
+    .footer-line p:last-child { font-size: 12px; }
+    .footer-line { margin-top: 20px; }
+}
