@@ -11,7 +11,7 @@
 
 ---
 
-🌐 [Live Demo](http://githubprofilesearch-online.netlify.app)
+🌐 [**Live Demo:**](http://githubprofilesearch-online.netlify.app) — Search any GitHub profile!
 
 ---
 
