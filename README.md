@@ -33,11 +33,11 @@ The GitHub Profile Search App allows users to quickly find GitHub profiles by us
 
 ### Home Page
 ![Home](Screenshots/home.png)  
-*🏠 Dynamic profile display with stats, bio, and repositories.*
+*🏠 Sleek, interactive landing page enabling instant GitHub profile lookup via usernames.*
 
 ### Search Page
 ![Search](Screenshots/search.png)  
-*⚡ Fast and intelligent search interface for GitHub users.*
+*⚡ Displays searched user profiles with detailed stats, bio, and links.*
 
 ### Mobile View
 ![Mobile View](Screenshots/mobileview.png)  
