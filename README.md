@@ -29,6 +29,22 @@ The GitHub Profile Search App allows users to quickly find GitHub profiles by us
 
 ---
 
+## Screenshots
+
+### Home Page
+![Home](Screenshots/home.png)  
+*🏠 Dynamic profile display with stats, bio, and repositories.*
+
+### Search Page
+![Search](Screenshots/search.png)  
+*⚡ Fast and intelligent search interface for GitHub users.*
+
+### Mobile View
+![Mobile View](Screenshots/mobileview.png)  
+*📱 Fully responsive design optimized for mobile screens.*
+
+---
+
 ## 🚀 Installation
 ```bash
 # Clone the repository
