@@ -347,9 +347,12 @@ a.profile-username {
     transform: translateZ(0);
 }
 
-.default-img:hover {
+/* Only apply hover effect on devices with real hover (desktop) */
+@media (hover: hover) and (pointer: fine) {
+  .default-img:hover {
     transform: scale(1.1) translateZ(0);
     box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  }
 }
 
 @media (max-width: 900px) {
@@ -417,3 +420,5 @@ a.profile-username {
     .footer-line p:last-child { font-size: 12px; }
     .footer-line { margin-top: 20px; }
 }
+
+
