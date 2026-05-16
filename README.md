@@ -47,7 +47,7 @@ The GitHub Profile Search App allows users to quickly find GitHub profiles by us
 # Clone the repository
 git clone https://github.com/deepanshu1420/GitHubProfileSearch.git
 
-# Go to the project folder
+# Navigate to the project folder
 cd GitHubProfileSearch
 
 # Install dependencies
