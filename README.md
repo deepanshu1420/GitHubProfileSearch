@@ -36,7 +36,7 @@ The GitHub Profile Search App allows users to quickly find GitHub profiles by us
 
 ## 🛠 Tech Stack Used
 
-- ⚛️ **Frontend:** React.js, HTML5, CSS3  
+- ⚛️ **Frontend:** HTML5, CSS3  
 - 🧩 **Framework / Library:** React.js
 - 🟨 **Programming Language:** JavaScript (ES6)  
 - 🔗 **API Integration:** GitHub REST API  
