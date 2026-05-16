@@ -1,4 +1,4 @@
-# 🔍 GitHub Profile Search App
+# 🔍 GitHub Profile Search
 
 ![React](https://img.shields.io/badge/React-18-61dafb?style=flat&logo=react&logoColor=000)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-f7df1e?style=flat&logo=javascript&logoColor=000)
@@ -9,45 +9,43 @@
 
 **A web app to search and view GitHub user profiles using the GitHub REST API.**
 
----
-
-🌐 Search any GitHub profile — [**Live Demo**](http://githubprofilesearch-online.netlify.app) 
-
----
+**🌐 Search any GitHub profile :** [Live Demo](http://githubprofilesearch-online.netlify.app) 
 
 ## ⚡ Overview
-The GitHub Profile Search App allows users to quickly find GitHub profiles by username and view key details such as bio, repositories, followers, and more. Built with React and styled using HTML/CSS, it integrates the GitHub REST API for real-time profile data.
+The GitHub Profile Search App allows users to quickly find GitHub profiles by username and view key details such as bio, repositories, followers and more. Built with React and styled using HTML/CSS, it integrates the GitHub REST API for real-time profile data.
 
----
+## 🛠 Features / Highlights
+- 🔍 **Search GitHub users** instantly by entering any GitHub username.
+- 👤 **Display detailed user profiles** including avatar, bio, location, followers and total repositories count.
+- 📱 **Responsive and modern UI design** optimized for both mobile devices and desktop screens.
+- ⚡ **Live data fetching** integrated with the GitHub REST API for real-time profile information.
 
-## 🛠 Features
-- **Search GitHub users** by username.
-- **Display user profile details**: avatar, bio, location, followers, following, repo count.
-- **Responsive design** for mobile and desktop.
-- **Live data fetching** using the GitHub REST API.
+## Screenshots / Demo
 
----
-
-## Screenshots
-
-### Home Page
+### 🏠 Home Page
 ![Home](Screenshots/home.png)  
-*🏠 Sleek, interactive landing page enabling instant GitHub profile lookup via usernames.*
+*Sleek, interactive landing page enabling instant GitHub profile lookup via usernames.*
 
-### Search Page
+### ⚡ Search Page
 ![Search](Screenshots/search.png)  
-*⚡ Displays searched user profiles with detailed stats, bio, and links.*
+*Displays searched user profiles with detailed stats, bio and links.*
 
-### Mobile View
+### 📱 Mobile View
 ![Mobile View](Screenshots/mobileview.png)  
-*📱 Fully responsive design optimized for mobile screens.*
+*Fully responsive design optimized for mobile screens.*
 
----
+## 🛠 Tech Stack Used
 
-## 🚀 Installation
+- ⚛️ **Frontend:** React.js, HTML5, CSS3  
+- 🟨 **Programming Language:** JavaScript (ES6)  
+- 🔗 **API Integration:** GitHub REST API  
+- 🌐 **Deployment:** Netlify  
+- 🛠️ **Version Control:** Git & GitHub  
+
+## ⚙️ Setup & Installation
 ```bash
 # Clone the repository
-git clone <your-repo-link>
+git clone https://github.com/deepanshu1420/GitHubProfileSearch.git
 
 # Go to the project folder
 cd GitHubProfileSearch
@@ -57,3 +55,4 @@ npm install
 
 # Start the dev server
 npm start
+```
