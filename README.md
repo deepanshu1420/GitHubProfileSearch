@@ -9,7 +9,7 @@
 
 **A web app to search and view GitHub user profiles using the GitHub REST API.**
 
-**🌐 Search any GitHub profile :** [Live Demo](http://githubprofilesearch-online.netlify.app) 
+**🌐 Search any GitHub profile :** [Live Demo](https://githubprofile-search.vercel.app/) 
 
 ## ⚡ Overview
 The GitHub Profile Search App allows users to quickly find GitHub profiles by username and view key details such as bio, repositories, followers and more. Built with React and styled using HTML/CSS, it integrates the GitHub REST API for real-time profile data.
