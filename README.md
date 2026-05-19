@@ -54,6 +54,6 @@ cd GitHubProfileSearch
 # Install dependencies
 npm install
 
-# Start the dev server
+# Start the development server
 npm start
 ```
