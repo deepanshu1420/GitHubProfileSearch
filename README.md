@@ -40,7 +40,7 @@ The GitHub Profile Search App allows users to quickly find GitHub profiles by us
 - 🧩 **Framework / Library:** React.js
 - 🟨 **Programming Language:** JavaScript (ES6)  
 - 🔗 **API Integration:** GitHub REST API  
-- 🌐 **Deployment:** Netlify  
+- 🌐 **Deployment:** Vercel  
 - 🛠️ **Version Control:** Git & GitHub  
 
 ## ⚙️ Setup & Installation
